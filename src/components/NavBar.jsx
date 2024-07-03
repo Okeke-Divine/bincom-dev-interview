@@ -36,7 +36,7 @@ const NavBar = () => {
             <img src="/assets/images/logo-group.png" className="hidden md:block" alt="Bincom Dev Logo" />
           </div>
           <div className="divider divider-horizontal"></div>
-          <div className="navbar-py">
+          <div className="navbar-py hidden md:block">
             <div className="input input-bordered flex items-center gap-2">
               <img src="/assets/svgs/Shape.svg" alt="search icon" />
               <input

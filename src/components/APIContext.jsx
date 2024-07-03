@@ -3,7 +3,7 @@ import React, { createContext, useState, useEffect } from 'react';
 
 const initialState = {
   items: [],
-  supplier: 'FragranceX', // Initial supplier
+  supplier: 'FragranceNet', // Initial supplier
   search: '', // Initial search term
   setSupplier: () => {},
   setSearch: () => {},
@@ -25,6 +25,9 @@ const APIProvider = ({ children }) => {
     try {
       const response = await fetch(`http://3.88.1.181:8000/products/public/catalog?supplier=${supplier}&search=${search}`);
       const data = await response.json();
+      if(response.status === 200){
+        setItems(data)
+      }
       setItems(data);
     } catch (error) {
       console.error('Error fetching data:', error);
