@@ -1,11 +1,13 @@
-import { useEffect } from "react"
+import React, { useContext } from 'react';
+import { APIContext } from './APIContext';
 
-const Table = ({ items }) => {
+const Table = () => {
+    const { items } = useContext(APIContext);
 
     return (
         <>
             <div className="overflow-x-auto">
-                <table className="table">
+                <table className="table table-xs">
                     {/* head */}
                     <thead className="bg-[#F0F4FE]">
                         <tr>

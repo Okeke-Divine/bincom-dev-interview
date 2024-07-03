@@ -1,21 +1,23 @@
-import { useState } from 'react'
-import './App.css'
-import NavBar from './components/NavBar'
-import List from './components/List'
+import { APIProvider } from "./components/APIContext";
+import Navbar from "./components/NavBar"
+import Table from "./components/Table"
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
+  // ... rest of your code
 
   return (
-    <>
-      {/* application navbar */}
-      <NavBar />
-      <div className="app-padding mt-5">
-        {/* list */}
-        <List />
-      </div>
-    </>
-  )
+    <APIProvider>
+      <>
+        {/* application navbar */}
+        <Navbar />
+        <div className="app-padding mt-5">
+          {/* list */}
+          <div className="text-xl font-bold p-3">Department List</div>
+          <div className="mt-3">
+            <Table />
+          </div>
+        </div>
+      </>
+    </APIProvider>
+  );
 }
-
-export default App
