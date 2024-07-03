@@ -1,9 +1,5 @@
 # Okeke Divine-Vessel - Bincom Dev Interview Submission
 
-## Description
-
-This project fetches products based on the catalog from suppliers such as FragranceX, FragranceNet, and Morris Costumes.
-
 ## Setup Instructions
 
 1. **Clone the repository:**
