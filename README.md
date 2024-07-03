@@ -4,17 +4,13 @@
 
 This project fetches products based on the catalog from suppliers such as FragranceX, FragranceNet, and Morris Costumes.
 
-## Setup Instruction
-
 ## Setup Instructions
-
-Follow these steps to get the project up and running on your local machine:
 
 1. **Clone the repository:**
 
    ```bash
    git clone https://github.com/Okeke-Divine/bincom-dev-interview.git
-   cd blutech-solution
+   cd bincom-dev-interview
    ```
 
 2. **Install dependencies:**
