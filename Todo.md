@@ -1,4 +1,4 @@
-## HI Okeke, here's the instruction for your inteview project
+## HI Okeke Divine-Vessel, here's the instruction for your inteview project
 
 Implement a UI design and integrate it with an API using API Context state management.
 
